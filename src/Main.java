@@ -9,6 +9,13 @@ public class Main {
         Cart shoppingCart = new Cart();
         shoppingCart.addItem
                 (new Item("Pečivo", BigDecimal.valueOf(148.10), Category.FOOD));
+         shoppingCart.addItem
+                (new Item("Tekuté mýdlo", BigDecimal.valueOf(89.90), Category.CONSUMABLES));
+
+
         System.out.println(shoppingCart.get(0));
+        System.out.println(shoppingCart.getListOfItems());
     }
+
+
 }
